@@ -1,17 +1,16 @@
 - name: play level variables
   hosts: local
   connection: local
-  vars:
-    COURSE: Ansible # equal to COURSE=Ansible in shell, shell we refer $VAR or ${VAR}
-    DURATION: 10HR
-    TRAINER: Sivakumar
+  vars: 
+   COURSE: Ansible
+   DURATION: 10HRS
+   TRAINER: Kumari
   tasks:
-  - name: print course information
-    ansible.builtin.debug:
-    #vars refernce should be surrounded by ""
+   - name: print course information
+     ansible.builtin.debug:
       msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
 
-  - name: print course information again
-    ansible.builtin.debug:
-    #vars refernce should be surrounded by ""
+  -  name: print course information again
+     ansible.builtin.debug:
       msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
+ 
