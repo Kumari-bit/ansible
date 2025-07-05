@@ -42,7 +42,7 @@
     ansible.builtin.debug:
       msg: "Hello {{ name | lower }}"
 
-  - name: check IP address is valid or not
+  - name: check ip address is valid or not
     vars:
       IP: 300.989.765.876
     ansible.builtin.debug:
