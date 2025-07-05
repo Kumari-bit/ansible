@@ -1,12 +1,12 @@
 - name: loops
   hosts: frontend
   tasks:
-  - name: install packages
-    ansible.builtin.packages:
-     msg: "{{item}}"
-     state: installed
-    loops:
-    - mysql
-    - nginx
-    - zip
+   - name: install packages
+     ansible.builtin.packages:
+      msg: "{{item}}"
+      state: installed
+     loops:
+     - mysql
+     - nginx
+     - zip
     
