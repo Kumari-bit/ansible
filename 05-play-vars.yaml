@@ -14,3 +14,4 @@
      ansible.builtin.debug:
        msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
  
+  
