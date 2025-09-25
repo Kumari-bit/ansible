@@ -11,3 +11,4 @@
       name: startnginx
       state: start
       enabled: yes
+      
