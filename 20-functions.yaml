@@ -8,7 +8,6 @@
     ansible.builtin.debug:
       msg: "Hello, {{ person | default('Ramesh') }}"
 
-  tasks:
-    - name: print names
-      ansible.builtin.debug:
-        msg: "Hello  {{ persons | split(',') }}"
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{ persons | split(',') }}"
