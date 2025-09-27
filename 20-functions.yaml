@@ -11,4 +11,4 @@
   tasks:
     - name: print names
       ansible.builtin.debug:
-        msg: "{{ persons | split(',') }}"
+        msg: "Hello {{ persons | split(',') }}"
