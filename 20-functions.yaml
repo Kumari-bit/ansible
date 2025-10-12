@@ -6,6 +6,6 @@
   tasks:
   - name: check undefined variable
     ansible.builtin.debug:
-      msg: "Hello, {{ person | default('Ramesh') }}"
+      msg: {{ value | default(5) }}
 
   
