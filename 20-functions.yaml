@@ -6,4 +6,6 @@
     ansible.builtin.debug:
       msg: "Hello, {{ person | default(Suresh) }}"
 
-
+  - name: check undefined variable
+    ansible.builtin.debug:
+      msg: "Hello, {{ persons }}"
