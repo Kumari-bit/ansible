@@ -1,6 +1,5 @@
 - name: gathering facts
-  hosts: local
-  connection: local
+  hosts: frontend
   tasks:
   - name: print facts
     ansible.builtin.debug:
